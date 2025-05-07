@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Task Managment</title>
+</head>
+
+<body>
+    <!--Header -->
+    <header>
+        <h1 class="LogoName"><a href="../index.html">Iakonterra</a></h1>
+        <div class="profilestyle">
+            <img src="../Resource/profil_logo.jpeg" alt="">
+            <h6>LordJodah</h6>
+            <div class="dropdown-menu">
+                <p>Status - Admin</p>
+                <a href="#">Another Profile</a>
+                <a href="#">Edit Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">History</a>
+                <button id="exitisprofile">Exit</button>
+            </div>
+        </div>
+    </header>
+    <!-- Main part -->
+    <main>
+        <div class="mainblock">
+            <h2>Task Managment</h2>
+            <div class="task_development">
+                <div class="tasktool">
+                    <div class="basetool">
+                        <h3>Tool of the task</h3>
+                        <ul>
+                            <li><button id="createbutton">Create Task</button></li>
+                            <li><button>Task Edit</button></li>
+                            <li><button>Automatic Cycle</button></li>
+                            <li><button>View</button></li>
+                            <li><button>Task Linking & Dependencies</button></li>
+                            <li><button>Task Archiving</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <form id="taskform">
+                    <div class="creatwindow" id="createmode">
+                        <h1>Create the task </h1>
+                        <label>Name</label>
+                        <input type="text" placeholder="Name of task" id="taskName">
+                        <label>Descriptions</label>
+                        <textarea name="" id="department"></textarea>
+                        <label>Department of Iakonterra</label>
+                        <select name="Department" id="department">
+                            <option value="">Music</option>
+                            <option value="">Game development</option>
+                            <option value="">Industry</option>
+                            <option value="">Program development (Ai)</option>
+                            <option value="">Office</option>
+                        </select>
+                        <input type="date" name="" id="taskDate">
+                        <label>FIO</label>
+                        <input type="text" id="taskFIO">
+                        <select name="Department" id="importanting">
+                            <option value="">Important</option>
+                            <option value="">No important</option>
+                        </select>
+
+                        <select name="Department" id="auto">
+                            <option value="">Auto</option>
+                            <option value="">No auto</option>
+                        </select>
+                        <label for="">General project</label>
+                        <input type="checkbox" name="" id="generalProject">
+
+                        <label for="">Send Archive</label>
+                        <input type="checkbox" name="" id="sendArchive">
+
+                        <label for="">File or image</label>
+                        <input type="file" name="" id="taskfile">
+
+                        <label for="">Finishing</label>
+                        <button id="cancle">Cancle</button>
+                        <button id="nextcreate">Create</button>
+                </form>
+            </div>
+            <div class="taskdesktop" id="taskdesktop">
+                <div class="tasktablecontrol">
+                    <label for="">Precedence/No Precedence:</label>
+                    <input type="radio" name="view" id="styleview1">
+                    <input type="radio" name="view" id="styleview2">
+                    <label for="">Name/Data</label>
+                    <input type="radio" name="filter" id="filters1">
+                    <input type="radio" name="filter" id="filters2">
+                    <input type="search" name="search" id="tasksearch" placeholder="Search tasks">
+                </div>
+                <div id="tasks">
+                  
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="../Scripts/taskscript.js"></script>
+
+</body>
+
+</html>
